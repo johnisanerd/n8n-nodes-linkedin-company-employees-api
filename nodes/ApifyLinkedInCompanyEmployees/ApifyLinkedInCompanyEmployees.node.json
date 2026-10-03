@@ -1,0 +1,38 @@
+{
+	"node": "n8n-nodes-linkedin-company-employees-api",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Data & Storage",
+		"Sales"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.apify.com/platform/integrations/n8n"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3"
+			}
+		]
+	},
+	"alias": [
+		"linkedin",
+		"linkedin employees",
+		"company employees",
+		"employee list",
+		"employees",
+		"people",
+		"staff",
+		"team",
+		"org chart",
+		"prospecting",
+		"lead generation",
+		"account mapping",
+		"recruiting",
+		"talent mapping",
+		"apify"
+	]
+}

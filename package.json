@@ -1,0 +1,81 @@
+{
+	"name": "n8n-nodes-linkedin-company-employees-api",
+	"version": "0.1.0",
+	"description": "List the people who work at a company from public LinkedIn pages: name, job title, location, and profile URL, each checked against their public profile. Filter by job title and location. Apify-backed n8n community node, pay-per-result, and usable as an AI agent tool.",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes",
+		"n8n",
+		"linkedin",
+		"linkedin-employees",
+		"company-employees",
+		"employee-list",
+		"employees",
+		"people",
+		"prospecting",
+		"lead-generation",
+		"account-mapping",
+		"recruiting",
+		"talent-mapping",
+		"org-chart",
+		"b2b",
+		"apify",
+		"ai-tool"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "JohnVC",
+		"email": "tirade.charge_4v@icloud.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johnisanerd/n8n-nodes-linkedin-company-employees-api.git"
+	},
+	"homepage": "https://github.com/johnisanerd/n8n-nodes-linkedin-company-employees-api#readme",
+	"bugs": {
+		"url": "https://github.com/johnisanerd/n8n-nodes-linkedin-company-employees-api/issues"
+	},
+	"engines": {
+		"node": ">=18.10"
+	},
+	"packageManager": "npm@10.8.2",
+	"main": "index.js",
+	"scripts": {
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/ApifyApi.credentials.js",
+			"dist/credentials/ApifyOAuth2Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ApifyLinkedInCompanyEmployees/ApifyLinkedInCompanyEmployees.node.js"
+		]
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.32.1",
+		"@types/jest": "^29.5.14",
+		"@types/node": "^24.0.1",
+		"apify-client": "^2.16.0",
+		"chalk": "^5.6.0",
+		"eslint": "9.29.0",
+		"glob": "^11.0.3",
+		"gulp": "^4.0.2",
+		"jest": "^29.7.0",
+		"nock": "^14.0.5",
+		"prettier": "^3.6.2",
+		"sharp": "^0.34.2",
+		"ts-jest": "^29.3.2",
+		"typescript": "5.9.2"
+	}
+}

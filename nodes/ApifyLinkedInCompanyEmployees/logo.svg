@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- badge -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#0A66C2"/>
+  <!-- team member, back left -->
+  <circle cx="20.5" cy="23.5" r="5.5" fill="#CFE3F7"/>
+  <path d="M11 39 a9.5 8.5 0 0 1 19 0 Z" fill="#CFE3F7"/>
+  <!-- team member, back right -->
+  <circle cx="43.5" cy="23.5" r="5.5" fill="#CFE3F7"/>
+  <path d="M34 39 a9.5 8.5 0 0 1 19 0 Z" fill="#CFE3F7"/>
+  <!-- team member, front (outlined in the badge color so it reads in front) -->
+  <circle cx="32" cy="30" r="6.5" fill="#FFFFFF" stroke="#0A66C2" stroke-width="3"/>
+  <path d="M20 50 a12 10.5 0 0 1 24 0 Z" fill="#FFFFFF" stroke="#0A66C2" stroke-width="3" stroke-linejoin="round"/>
+</svg>

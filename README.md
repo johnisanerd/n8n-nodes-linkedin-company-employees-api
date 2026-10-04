@@ -130,12 +130,12 @@ Email addresses and phone numbers are not on LinkedIn's public pages, so the nod
 2. **LinkedIn Company Employees**: add the competitor's LinkedIn URL, Job Title Keywords `data engineer`, Locations `Dublin`, Output `Selected Fields` with `fullName`, `currentTitle`, `location`, `positions`, `education`, and `profileUrl`.
 3. **Airtable**: create one record per person for your sourcing pipeline.
 
-### 3. Watch who joins and who leaves each month
+### 3. Confirm your CRM contacts still work at their accounts each month
 
 1. **Schedule Trigger**: once a month.
-2. **LinkedIn Company Employees**: the companies you track, Output `Selected Fields` with `slug`, `fullName`, `currentTitle`, and `profileUrl`.
-3. **Compare Datasets**: compare this month's people with last month's list on `slug`.
-4. **Slack**: post the people who appeared and the people who dropped off.
+2. **LinkedIn Company Employees**: the accounts you track, Output `Selected Fields` with `slug`, `fullName`, `currentTitle`, and `profileUrl`.
+3. **Compare Datasets**: match this month's people against your CRM contacts on `slug`.
+4. **Slack**: post the contacts confirmed as current, and the people newly seen at each account. Treat a contact who does not appear as "not seen this run", not as "left": the list is partial, and a person can still work there without showing up in public search.
 
 ### 4. Let an AI Agent look up a team
 
@@ -145,7 +145,7 @@ Email addresses and phone numbers are not on LinkedIn's public pages, so the nod
 
 ## Pricing
 
-This node calls the [LinkedIn Company Employees API](https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3) on Apify, which is billed **pay-per-result** with no subscription and no minimums. You pay per person returned, never per search: a verified person (profile confirms a current role) or a found person (search-level row, when Verify Employment is off or a profile could not be opened), never both for the same person. Error rows and people dropped as former employees are free. Apify's free plan includes monthly platform credits for trying it out. See the [Actor page](https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3) for current rates.
+This node calls the [LinkedIn Company Employees API](https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3) on Apify, which is billed **pay-per-event** with no subscription and no minimums. You pay per person returned, never per search: a verified person (profile confirms a current role) or a found person (search-level row, when Verify Employment is off or a profile could not be opened), never both for the same person. Each run also carries a small start event, and each stored row a small dataset-item event. Error rows are never charged as a person, and people dropped as former employees produce no row and no charge. Apify's free plan includes monthly platform credits for trying it out. See the [Actor page](https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3) for current rates.
 
 ## Related nodes
 
@@ -160,6 +160,8 @@ Part of a suite of LinkedIn APIs for n8n that read only LinkedIn's public pages,
 
 - [LinkedIn Company Employees API on Apify](https://apify.com/johnvc/linkedin-company-employees-api?fpr=9n7kx3)
 - [npm package](https://www.npmjs.com/package/n8n-nodes-linkedin-company-employees-api)
+- [Python and MCP example repo](https://github.com/johnisanerd/Apify-LinkedIn-Company-Employees-API)
+- [Source page on Alpha OSINT](https://alphaosint.com/sources/linkedin-company-employees-api/)
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 - [Apify n8n integration guide](https://docs.apify.com/platform/integrations/n8n)
 

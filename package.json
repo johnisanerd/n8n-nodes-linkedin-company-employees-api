@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-linkedin-company-employees-api",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "List the people who work at a company from public LinkedIn pages: name, job title, location, and profile URL, each checked against their public profile. Filter by job title and location. Apify-backed n8n community node, pay-per-result, and usable as an AI agent tool.",
 	"keywords": [
 		"n8n-community-node-package",
@@ -17,7 +17,7 @@
 		"account-mapping",
 		"recruiting",
 		"talent-mapping",
-		"org-chart",
+		"team-mapping",
 		"b2b",
 		"apify",
 		"ai-tool"

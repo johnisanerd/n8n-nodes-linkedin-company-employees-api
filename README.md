@@ -15,7 +15,7 @@ Give the node one or more companies, and it returns one item per person who work
 - Handle up to 50 companies and up to 1,000 people per company in one run
 - Choose how much data to return per person: Simplified, Raw, or Selected Fields
 
-Typical uses: account-based prospecting (list the decision makers at your target accounts), recruiting and talent mapping (see who is on a competitor's team, and where), org charts and market maps, and CRM hygiene (check that your contacts still work at the account).
+Typical uses: account-based prospecting (list the decision makers at your target accounts), recruiting and talent mapping (see who is on a competitor's team, and where), team maps (how many engineers, designers or recruiters a company shows publicly, and where they sit), and CRM hygiene (check that your contacts still work at the account).
 
 ## Installation
 

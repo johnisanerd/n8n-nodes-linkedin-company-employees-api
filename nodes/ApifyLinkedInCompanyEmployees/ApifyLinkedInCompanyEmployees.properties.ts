@@ -50,13 +50,10 @@ export function buildActorInput(
 	input.verifyEmployment = context.getNodeParameter('verifyEmployment', itemIndex, true);
 
 	// Advanced settings are sent only when the user adds them, so the Actor's own
-	// defaults apply otherwise (maxAgeDays has no default: each record type keeps its own).
+	// defaults apply otherwise.
 	const options = context.getNodeParameter('options', itemIndex, {}) as IDataObject;
 	if (options.maxSearchQueriesPerCompany !== undefined) {
 		input.maxSearchQueriesPerCompany = options.maxSearchQueriesPerCompany;
-	}
-	if (options.maxAgeDays !== undefined) {
-		input.maxAgeDays = options.maxAgeDays;
 	}
 
 	return input;
@@ -162,15 +159,6 @@ const actorProperties: INodeProperties[] = [
 		default: {},
 		displayOptions: showForGetMany,
 		options: [
-			{
-				displayName: 'Max Cached Result Age (Days)',
-				name: 'maxAgeDays',
-				type: 'number',
-				default: 1,
-				typeOptions: { minValue: 0, maxValue: 90 },
-				description:
-					'Serve results fetched within this many days from the shared cache. 0 always fetches fresh. Leave this option out to keep the default for each record type.',
-			},
 			{
 				displayName: 'Max Search Slices per Company',
 				name: 'maxSearchQueriesPerCompany',

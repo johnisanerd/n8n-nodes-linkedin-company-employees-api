@@ -53,7 +53,6 @@ The node also supports **Apify OAuth2** if you prefer to connect that way.
 | Max Employees per Company | Stop after returning this many people for each company (1 to 1,000, default 100). You are charged only for people actually returned. |
 | Verify Employment | On (default): open each person's public profile and confirm a current role at the company, adding title, location, work history, education, and photo. Off: a faster, cheaper list with search-level data only (name, headline, profile URL). |
 | Options > Max Search Slices per Company | Cap on the public searches run per company (1 to 100, default 40). Each slice returns about ten people, so more slices reach more of a large company. |
-| Options > Max Cached Result Age (Days) | Serve results fetched within this many days from the shared cache (0 to 90). 0 always fetches fresh. Leave the option out to keep the default for each record type. |
 | Output | How much data to return: Simplified, Raw, or Selected Fields. |
 
 ### Coverage: what to expect
